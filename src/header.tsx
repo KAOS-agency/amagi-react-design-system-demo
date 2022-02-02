@@ -7,7 +7,7 @@ import {
 
 const Header = () => {
   return (
-    <Navbar align="left" logo="https://www.amagi.com/images/logo-white.svg">
+    <Navbar className="fix-navbar" align="left" logo="https://www.amagi.com/images/logo-white.svg">
       <Nav>
         <NavItem active>
           <NavLink href="/">Home</NavLink>

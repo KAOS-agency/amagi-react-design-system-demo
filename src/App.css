@@ -5,3 +5,7 @@
     background-color: var(--neutral-stone-900);
     bottom: 0;
 }
+
+.splitshell {
+    padding-top: 40px;
+}
