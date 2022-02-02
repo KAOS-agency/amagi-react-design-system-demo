@@ -3,13 +3,16 @@ import {
   ProgressBar,
   ThemeProvider,
 } from "@kaos-agency/amagi-react-design-system";
+import Header from "./header";
 import './App.css';
 
 function App() {
   return (
     <ThemeProvider theme="dark" className="App">
-      <h1>Hello world!</h1>
-      <div id="demo-progress"><ProgressBar progress={20} /></div>
+      <Header />
+      <div id="demo-progress">
+        <ProgressBar progress={40} />
+      </div>
     </ThemeProvider>
   );
 }
