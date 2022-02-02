@@ -9,6 +9,7 @@ import {
 } from "@kaos-agency/amagi-react-design-system";
 import Header from "./header";
 import './App.css';
+import ReviewForm from './review-form';
 
 function App() {
   const [showSidebar, setShowSidebar] = useState(true);
@@ -19,8 +20,9 @@ function App() {
         <Left
           show={showSidebar}
           width={300}
+          className="form-parent"
         >
-          <div>Hey!</div>
+          <ReviewForm />
         </Left>
         <Right style={{ backgroundColor: "var(--neutral-stone-500)" }}>
           <Button onClick={() => setShowSidebar((s) => !s)}>
