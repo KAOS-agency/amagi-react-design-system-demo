@@ -31,7 +31,7 @@ function App() {
         </Right>
       </Splitshell>
       <div id="demo-progress">
-        <ProgressBar progress={60} color="orange" />
+        <ProgressBar progress={80} color="orange" />
       </div>
     </ThemeProvider>
   );
