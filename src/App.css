@@ -1,0 +1,7 @@
+#demo-progress {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--neutral-stone-900);
+    bottom: 0;
+}
