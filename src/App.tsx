@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   Left,
   ProgressBar,
@@ -7,8 +7,8 @@ import {
   ThemeProvider,
 } from "@kaos-agency/amagi-react-design-system";
 import Header from "./header";
-import "./App.css";
-import ReviewForm from "./review-form";
+import './App.css';
+import ReviewForm from './review-form';
 import Review, { UserReview } from "./reviews";
 
 function App() {
