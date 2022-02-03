@@ -5,8 +5,11 @@ import {
   Row,
 } from "@kaos-agency/amagi-react-design-system";
 import { Form, Formik } from "formik";
+import { UserReview } from "./reviews";
 
-const ReviewForm = () => {
+const ReviewForm: React.FC<{
+  addReview: (review: UserReview) => void;
+}> = ({ addReview }) => {
   return (
     <Row>
       <Col>
@@ -15,8 +18,12 @@ const ReviewForm = () => {
             name: "",
             email: "",
           }}
-          onSubmit={(values) => {
-            console.log(JSON.stringify(values, null, 2));
+          onSubmit={(values, { resetForm }) => {
+            addReview({
+              ...values,
+              timestamp: new Date(),
+            });
+            resetForm();
           }}
         >
           <Form>
