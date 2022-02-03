@@ -9,3 +9,7 @@
 .splitshell {
     padding-top: 40px;
 }
+
+.form-parent {
+    background-color: var(--neutral-stone-700);
+}
